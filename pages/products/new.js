@@ -6,7 +6,8 @@ export default function NewProduct() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = ('');
     const [price,setPrice] = useState('');
-    async function createProduct(){
+    async function createProduct(ev) {
+        ev.preventDefault();
         const data = {title, description,price};
         await axios.post('/api/products', data);
     }
