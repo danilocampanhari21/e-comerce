@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function NewProduct() {
     const [title, setTitle] = useState('');
-    const [description, setDescription] = ('');
+    const [description, setDescription] = useState ('');
     const [price,setPrice] = useState('');
     async function createProduct(ev) {
         ev.preventDefault();
@@ -23,9 +23,9 @@ export default function NewProduct() {
 
             <label>Description</label>
             <textarea 
-            placeholder="description" 
-            value={description}
-            onChange={ev => setDescription(ev.target.value)}
+                placeholder="description" 
+                value={description}
+                onChange={ev => setDescription(ev.target.value)}
             ></textarea>
 
             <label>Price (in USD)</label>
