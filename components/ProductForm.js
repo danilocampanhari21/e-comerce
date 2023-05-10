@@ -36,6 +36,9 @@ export default function ProductForm({
             placeholder="product name" 
             value={title} 
             onChange={ev => setTitle (ev.target.value)}></input>
+            <label>
+                PAREI AQUI, O PROXIMO PASSO É COLOCAR O INDEXADOR DE FOTOS (APAGAR ISSO) 
+            </label>
 
             <label>Description</label>
             <textarea 
